@@ -1,0 +1,183 @@
+
+/* Main CSS*/
+html {
+	line-height: 1.1em;	
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #293442;
+	font-family: Candara, sans-serif;
+	font-size: 14px;
+}
+
+body.index {
+	background-color: #CCC;
+}
+
+h1 {
+	padding: 0;
+	margin: 5;
+	text-align: left;
+	font-size: 24px;
+	color: #999;
+}
+
+h2 {
+	padding: 0;
+	margin: 15px 0 10px 0;
+	line-height: 1.2em;
+	text-align: left;
+	font-size: 20px;
+	color: #CCC;	
+}
+
+h3 {
+	padding: 0;
+	margin: 25px 0 5px 10px;
+	line-height: 1.2em;
+	text-align: left;
+	font-size: 16px;
+	}
+	
+p {
+	padding: 5px 0px;
+	margin: 5px;
+	line-height: 1.2em;
+}
+
+p.remark {
+	margin: 5px 10px;
+	line-height: 1.2em;
+	font-size: 10px;
+	text-align: right;
+	color: #999;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+form fieldset p {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin-top: 5px;
+	margin-left: 5%;
+	width: 500px;
+}
+
+.container input {
+	width: 100%;
+	clear: both;
+}
+
+label.mandatory:after {
+	display: inline-block;
+   color: #a21f1f;
+   content: '\a0*';
+}
+/******* FORMS *******/
+#bombsightTableForm {
+	background-color: #fff;
+	height: 370px;
+	width: 350px;    
+	padding: 0 30px 30px 30px;	  
+}
+
+/********FIELDSETS **********/
+#action {
+	margin: 2px 0 25px 0;
+}
+
+
+/********INPUT FORM FIELDS **********/
+#inputs input.form {
+	 background: #f1f1f1;
+	 padding: 2px;
+	 margin: 4px 30px 4px 2px;
+	 height: 20px;
+	 width: 341px;
+	 border: 1px solid #ccc;
+	 -moz-border-radius: 0px;
+	 -webkit-border-radius: 0px;
+	 border-radius: 0px;
+	 -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	 -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	 box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+#results input {
+	background: #f1f1f1;
+	padding: 2px 20px;
+	margin: 4px 0px 4px 2px;
+	height: 20px;
+	width: 50px;
+	border: 1px solid #ccc;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	-moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	-webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	
+	display: block;
+	float: none;
+	font-size: 17px;
+	color: #55C84F;
+}
+
+/******** BUTTONS *********/
+#doIt {
+	background: none;	
+	background-color: #a21f1f;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+	font: 23px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #E6E6E6;
+	cursor: pointer;
+	 width: 341px;
+	height: 40px;
+	padding: 0;	
+}
+
+#doIt:hover, #doIt:focus {		
+	background-color: #293442;
+	height: 40px;	
+}
+
+#doIt:active {
+	background-color: #293442;	
+	height: 40px;		
+	outline: none;
+}
+
+#doIt::-moz-focus-inner {
+	border: none;
+}
+
+
+#inputs label {  
+	display: inline-block;  
+	position: relative;  
+	padding-left: 0px;  
+	margin-right: 15px;  
+	font-size: 13px;  
+}
+
+#results label {
+	float: none;
+	display: inline-block;  
+	font-size: 13px;
+	margin-top: -15px; 
+}
+
+#results label.first { 
+	margin-top: 8px;  
+}
+
