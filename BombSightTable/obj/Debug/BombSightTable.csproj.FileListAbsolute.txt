@@ -1,0 +1,9 @@
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\bin\Debug\BombSightTable.exe.config
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\bin\Debug\BombSightTable.exe
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\bin\Debug\BombSightTable.pdb
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\obj\Debug\BombSightTable.BombSightTableForm.resources
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\obj\Debug\BombSightTable.Properties.Resources.resources
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\obj\Debug\BombSightTable.csproj.GenerateResource.Cache
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\obj\Debug\BombSightTable.exe
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\obj\Debug\BombSightTable.pdb
+C:\Users\VS201\Documents\GitHub\Repos\BombsightTable\BombSightTable\obj\Debug\BombSightTable.csprojResolveAssemblyReference.cache
