@@ -12,6 +12,7 @@ namespace BombSightTable
 {
     public partial class BombSightTableForm : Form
     {
+
         public BombSightTableForm()
         {
             InitializeComponent();
@@ -73,10 +74,10 @@ namespace BombSightTable
 
 
             // debug fieldFocus vaiable
-            if (fieldFocus != "")
+            /*if (fieldFocus != "")
             {
                 MessageBox.Show(fieldFocus);
-            }
+            }*/
 
             // output collected Errors
             if (!String.IsNullOrEmpty(errorMessages))
@@ -104,7 +105,7 @@ namespace BombSightTable
             }
             else
             {
-                // loop to create a certain range of outputs based on calculated results
+                // loop to create a range -10 to + 10 degrees from provided value of outputs based on calculated results
 
                 // convert all form strings to int values
                 int acHeading = 0;
@@ -120,7 +121,16 @@ namespace BombSightTable
                 // define some variables
                 int circle = 360;
                 int correction = 0;
-                string sideCorrection = string.Empty;
+                string sideCorrection = String.Empty;
+                
+                // create empty string to collect the Errors
+                string bombingCalculations = String.Empty;
+                string bombingCalculationsAcHeading = String.Empty;
+                string bombingCalculationsCorrection = String.Empty;
+                string bombingCalculationsSide = String.Empty;
+
+
+                int stepInterval = 2;
                 int i = -10;
 
                 while(i <= 10)
@@ -132,8 +142,8 @@ namespace BombSightTable
                     }
                     else
                     {
-                        acHeading = acHeading + 1;
-                        correction = correction + 1;
+                        acHeading = acHeading + stepInterval;
+                        correction = correction + stepInterval;
                     }
 
                     // correction fro crosing 360
@@ -176,21 +186,49 @@ namespace BombSightTable
                         }
                     }
 
-                    // debug output sideCorrection
-                    MessageBox.Show("sideCorrection:\r\n" + sideCorrection);
+                    // output section             
 
-                    // debug acHeading
-                    MessageBox.Show("acHeading:\r\n" + acHeading);
+                    // build individualmessages
+                    bombingCalculationsAcHeading = acHeading + "\r\n" + bombingCalculationsAcHeading;
+                    bombingCalculationsCorrection = correction + "\r\n" + bombingCalculationsCorrection;
+                    bombingCalculationsSide = sideCorrection + "\r\n" + bombingCalculationsSide;
 
-                    // debug correction
-                    MessageBox.Show("correction:\r\n" + correction);
 
-                    i = i + 1;
+                    // debug output
+                    //MessageBox.Show("sideCorrection:\r\n" + sideCorrection);
+                    //MessageBox.Show("acHeading:\r\n" + acHeading);
+                    //MessageBox.Show("correction:\r\n" + correction);
+
+                    i = i + stepInterval;
 
                 }
 
+                // This will change the Form's Width and Height, respectively.
+                this.Size = new Size(387, 242);
+
+                // output result to message box
+                //MessageBox.Show(bombingCalculationsAcHeading);
+                //MessageBox.Show(bombingCalculationsCorrection);
+                //MessageBox.Show(bombingCalculationsSide);
+
+
+                // output to individual windows
+                resultHeadingOutput.Visible = true;
+                outputLabelHeading.Visible = true;
+                resultHeadingOutput.Text = bombingCalculationsAcHeading.ToString();
+
+                resultCorrectionOutput.Visible = true;
+                outputLabelCorrection.Visible = true;
+                resultCorrectionOutput.Text = bombingCalculationsCorrection.ToString();
+
+                resultSideOutput.Visible = true;
+                outputLabelSide.Visible = true;
+                resultSideOutput.Text = bombingCalculationsSide.ToString();
+
             }
-                
+
+            
+
         }
 
         private void inputApproachHeading_TextChanged(object sender, EventArgs e)
@@ -199,6 +237,21 @@ namespace BombSightTable
         }
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void resultOutputTextContainer_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void resultOutputRichtextContainer_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void outputLabelSide_Click(object sender, EventArgs e)
         {
 
         }
