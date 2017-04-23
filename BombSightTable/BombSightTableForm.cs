@@ -255,5 +255,10 @@ namespace BombSightTable
         {
 
         }
+
+        private void inputAltitudeMasked_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

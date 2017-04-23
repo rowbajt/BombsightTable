@@ -100,6 +100,7 @@
             this.inputApproachHeadingMasked.Location = new System.Drawing.Point(118, 28);
             this.inputApproachHeadingMasked.Mask = "000";
             this.inputApproachHeadingMasked.Name = "inputApproachHeadingMasked";
+            this.inputApproachHeadingMasked.PromptChar = ' ';
             this.inputApproachHeadingMasked.Size = new System.Drawing.Size(68, 20);
             this.inputApproachHeadingMasked.TabIndex = 10;
             this.inputApproachHeadingMasked.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
@@ -109,15 +110,18 @@
             this.inputAltitudeMasked.Location = new System.Drawing.Point(118, 66);
             this.inputAltitudeMasked.Mask = "00000";
             this.inputAltitudeMasked.Name = "inputAltitudeMasked";
+            this.inputAltitudeMasked.PromptChar = ' ';
             this.inputAltitudeMasked.Size = new System.Drawing.Size(68, 20);
             this.inputAltitudeMasked.TabIndex = 11;
             this.inputAltitudeMasked.ValidatingType = typeof(int);
+            this.inputAltitudeMasked.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.inputAltitudeMasked_MaskInputRejected);
             // 
             // inputWindHeadingMasked
             // 
             this.inputWindHeadingMasked.Location = new System.Drawing.Point(119, 104);
             this.inputWindHeadingMasked.Mask = "000";
             this.inputWindHeadingMasked.Name = "inputWindHeadingMasked";
+            this.inputWindHeadingMasked.PromptChar = ' ';
             this.inputWindHeadingMasked.Size = new System.Drawing.Size(68, 20);
             this.inputWindHeadingMasked.TabIndex = 12;
             // 
@@ -126,6 +130,7 @@
             this.inputWindSpeedMasked.Location = new System.Drawing.Point(119, 142);
             this.inputWindSpeedMasked.Mask = "00";
             this.inputWindSpeedMasked.Name = "inputWindSpeedMasked";
+            this.inputWindSpeedMasked.PromptChar = ' ';
             this.inputWindSpeedMasked.Size = new System.Drawing.Size(68, 20);
             this.inputWindSpeedMasked.TabIndex = 13;
             // 
